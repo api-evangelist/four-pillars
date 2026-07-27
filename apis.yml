@@ -1,8 +1,25 @@
 aid: four-pillars
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/four-pillars.png
 name: Four Pillars
-description: 'Four Pillars is a company surfaced as a portfolio company of pantera-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Four Pillars is a research-driven blockchain enterprise headquartered in Asia, operating
+  through three divisions: FP Research publishes primary analysis of crypto protocols, markets, and
+  policy with deep regional expertise across Korea and the broader Asian market; FP Validated runs
+  validator and node infrastructure across proof-of-stake networks, pairing research with live operations;
+  and FP Institution advises banks, financial institutions, and corporates on blockchain strategy. The
+  firm serves founders, funds, and regulators, and is a portfolio company of Pantera Capital. It is a
+  research and advisory business rather than a developer-facing API platform, and publishes no public
+  developer API, SDK, or documentation portal as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/four-pillars/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- Blockchain
+- Research
+- Validator
+- Staking
+- Advisory
+- Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/four-pillars-domain-security.yml
 - type: Website
   url: https://4pillars.io/
+- type: Blog
+  url: https://4pillars.io/en/blog
+- type: Support
+  url: mailto:support@4pillars.io
+- type: TermsOfService
+  url: https://4pillars.io/en/policy/terms-of-service
+- type: PrivacyPolicy
+  url: https://4pillars.io/en/policy/privacy-policy
+- type: Twitter
+  url: https://x.com/FourPillarsFP
+- type: LinkedIn
+  url: https://linkedin.com/company/fourpillarsfp
+- type: Telegram
+  url: https://t.me/FourPillarsGlobal
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
